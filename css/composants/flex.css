@@ -1,13 +1,4 @@
-.fa-solid {
-    position: fixed;
-    top: 20px;
-    z-index: 10;
-    width: 200px;
-    height: 100px;
-    background: none;
-    left: 2px;
-    display: none;
-}
+
 
 .navBar{
     
@@ -16,35 +7,27 @@
     display: flex;
     padding: 0 20px;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    
-    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;  
 } 
 
 .menu {
- flex: 1;
-     
+ flex-grow:  1;   
 }
+
 .imglogo {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    
+    object-fit: cover;   
 }
 
 .list-menu {
     display: flex;
     gap: 100px;
-    justify-content: center;
-    
-    
-     
+    justify-content: center;    
 }
 
 .list-menu li{
-
 list-style: none;
-
 }
 
 
@@ -61,8 +44,6 @@ justify-content: flex-end;
 gap: 30px;
 padding-right: 20px;
 flex-wrap: 1;
-
-
 }
 
 .buttons button {
@@ -71,8 +52,6 @@ flex-wrap: 1;
     border-style: none;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-   
-
 }
 
     
@@ -87,7 +66,16 @@ img{
     background: none;
 }
 
-
+.fa-solid {
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+    width: 200px;
+    height: 100px;
+    background: none;
+    left: 2px;
+    display: none;
+}
 
 
 
@@ -117,18 +105,15 @@ header {
 }
 
 aside {
-  
     display: flex;
     justify-content: center;
     height: auto;
-    
-   
 }
 
 .aside-contain{
 
     width: 90%;
-    height: 55vh;
+    height: 75vh;
     border-radius: 5%;
    /*  background: linear-gradient(to bottom, #F6F6F7 1%, 70%, #26ADDA 100%); */
     box-shadow: var(--main-navbar-shadow-color);
@@ -143,11 +128,8 @@ aside {
     justify-content: center;
     align-items: center ;
     gap: 7px;
-    margin-top: 55px;
-    margin: 0 5px;
     
-
-
+    margin: 5px 5px 0 5px;
 }
 
 .text {
@@ -213,8 +195,6 @@ ol > li:nth-child(2n){
  box-shadow: var(--main-navbar-shadow-color);
  border-right: 1px solid black;
  z-index: 2;
- 
- 
 }
 
 .logo1 {
@@ -250,8 +230,6 @@ ol > li:nth-child(2n){
 .list-menu1 li {
    font-size: 25px;
     height: auto;
-    
-
 }
 
 .buttons1 {
@@ -261,10 +239,7 @@ ol > li:nth-child(2n){
     height: 500px;
     margin-top: 50px;
     align-items: center;
-    justify-content: center;
-    
-   
-   
+    justify-content: center; 
 }
 
 .buttons1 button {

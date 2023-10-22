@@ -25,54 +25,7 @@
  
 }
 
-@media screen and (max-width: 880px) {
-    .main {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 0;
 
-    }
-
-    aside {
-        order: 1;
-       /*  position: sticky;
-        top: 0px ; */
-        background: none;
-        width: 100%;
-    }
-   .prime {
-    order: 2;
-    margin-top: 15px;
-   }
-    .tweets {
-        order: 3;
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
-    .tweets > div:nth-child(3n) {
-        grid-column: 1/2;
-    }
-
-    .aside-contain{
-        width: 100%;
-        height: 200px;
-        border-radius: 0%;
-    }
-
-    .hastags ol {
-       flex-direction: row;
-       flex-wrap: wrap;
-       gap: 35px;
-    }
-     
-    header {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-     
-}
 
 @media screen and (max-width: 615px){
 
@@ -117,7 +70,7 @@
     }
 }
 
-@media screen and (min-width: 516) {
+@media screen and (min-width: 516px) {
     .navBar1 {
       display: none;
     }
