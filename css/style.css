@@ -1,0 +1,30 @@
+@import url(composants/flex.css);
+@import url(composants/grid.css);
+@import url(composants/responsive.css);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Playfair Display', serif;
+    /*  background: /* Gradient in Hex
+    linear-gradient(to right, #60C9DF 2%, 23.093220591545105%, #92A4B0 46.18644118309021%, 73.0932205915451%, #F6F6F6 100%);
+     */
+    background-color: #F2F2F2;
+    font-size: 20px;
+    --main-bg-color : #26ADDC;
+    --main-shadow-color : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    --main-navbar-shadow-color: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --main-background-color : #F2F2F2;  
+
+}
+
+body {
+    position: relative;
+    z-index: -1;
+}
+  
+

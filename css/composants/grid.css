@@ -1,0 +1,30 @@
+.main {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    justify-content: center;
+
+}
+
+.prime {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 22px;
+    text-decoration: underline;
+}
+
+.tweets {
+   grid-column: 1/2;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 15px;
+   padding: 20px;
+   justify-content: center;
+   
+}
+
+.tweets > div:nth-child(3n) {
+    
+    grid-column: 1/3;
+}

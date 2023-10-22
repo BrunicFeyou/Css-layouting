@@ -1,20 +1,12 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'EB Garamond', serif;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Playfair Display', serif;
-    /*  background: /* Gradient in Hex
-    linear-gradient(to right, #60C9DF 2%, 23.093220591545105%, #92A4B0 46.18644118309021%, 73.0932205915451%, #F6F6F6 100%);
-     */
-    background-color: #F2F2F2;
-    font-size: 20px;
-    --main-bg-color : #26ADDC;
-    --main-shadow-color : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    --main-navbar-shadow-color: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    --main-background-color : #F2F2F2;  
-
+.fa-solid {
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+    width: 200px;
+    height: 100px;
+    background: none;
+    left: 2px;
+    display: none;
 }
 
 .navBar{
@@ -95,29 +87,7 @@ img{
     background: none;
 }
 
-.main {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    
-    justify-content: center;
 
-}
-
-.tweets {
-   grid-column: 1/2;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 15px;
-   padding: 20px;
-   justify-content: center;
-   
-}
-
-.tweets > div:nth-child(3n) {
-    
-    grid-column: 1/3;
-}
 
 
 
@@ -219,104 +189,88 @@ ol > li:nth-child(2n){
     color: #26ADDC;
 }
 
-@media  screen and (max-width: 1070px) {
 
-    .navBar {
-     flex-direction: column;
-     height: auto;
 
-    }
+.navBar1{
+  
+ width: 200px;
+ height: 100%;
+ position: fixed;
+ top: 0;
+ z-index: 1;
+ display: none;
+ transition: width 1s ease-in-out;
+}
 
-    .list-menu{
-       flex-wrap: wrap; 
-       gap: 50px;
-    }
 
-    .menu{
-        margin-bottom: 15px;
-    }
-    
-    .imglogo {
-        margin: 0;
-    }
-
-    .buttons{
-        margin-bottom: 10px;
-    }
+.navBar2 {
+ width: 100%;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ align-items: center;
+ box-shadow: var(--main-navbar-shadow-color);
+ border-right: 1px solid black;
+ z-index: 2;
+ 
  
 }
 
-@media screen and (max-width: 880px) {
-    .main {
-        display: grid;
-        grid-template-columns: 1fr;
-
-    }
-
-    aside {
-        order: 1;
-        position: sticky;
-        top: 0px ;
-        background: none;
-        width: 100%;
-    }
+.logo1 {
+    flex-grow: 1;
+    height: auto;
    
-    .tweets {
-        order: 2;
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
-    .tweets > div:nth-child(3n) {
-        grid-column: 1/2;
-    }
-
-    .aside-contain{
-        width: 100%;
-        height: 200px;
-        border-radius: 0%;
-    }
-
-    .hastags ol {
-       flex-direction: row;
-       flex-wrap: wrap;
-       gap: 35px;
-    }
-     
-    header {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-     
 }
 
-@media screen and (max-width: 615px){
+.imglogo1 {
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .aside-contain{
-       
-        height: 250px;
-        
-    }
+.menu1{
+    
+    flex-grow: 1;
+    height: 100%;
+ 
+} 
+
+.list-menu1{
+    list-style: none;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.list-menu1 li {
+   font-size: 25px;
+    height: auto;
+    
 
 }
 
-@media screen and (max-width: 515px){
-
-    .aside-contain{
-       
-        height: 350px;
-        
-    }
-
+.buttons1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    
+   
+   
 }
 
-@media screen and (max-width: 340px){
-
-    .aside-contain{
-       
-        height: 390px;
-        
-    }
-
+.buttons1 button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: var(--main-bg-color);
+    box-shadow: var(--main-shadow-color);
+    border-style: none;
 }
